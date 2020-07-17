@@ -468,8 +468,8 @@ linear-gradient(rgba(0,0,0,1),
 rgba(0,0,0,.7)), 
 url(../img/advantages-fon.jpg);
 	background-size: cover;
-	background-position: center;
-	max-height: 480px;
+	background-position: center;/*
+	max-height: 480px;*/
 	min-height: 320px;
 	background-repeat: no-repeat;
 	padding: 55px 0 40px;
@@ -553,6 +553,9 @@ url(../img/advantages-fon.jpg);
 	max-width: 260px;
 	width: 100%;
 }
+.news__blog:last-child {
+	margin-left: 32px;
+}
 .news__images {
 	position: relative;
 }
@@ -631,12 +634,12 @@ url(../img/advantages-fon.jpg);
 }
 .footer__map {
 	padding-top: 14px;
-}
-/*.footer__map iframe {
-	height: 250px;
 	max-width: 630px;
 	width: 100%;
-}*/
+}
+.footer__map iframe {
+	width: 100%;
+}
 .footer__info {
 	max-width: 360px;
 }
@@ -689,7 +692,8 @@ url(../img/advantages-fon.jpg);
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	line-height: 24px;
-	padding: 8px 0;
+	paddin
+	g: 8px 0;
 	font-weight: 400;
 	color: #919191;
 }
@@ -710,4 +714,10 @@ url(../img/advantages-fon.jpg);
 #modal input[type="submit"] {
 	background-color: #ffc222;
 	border: none;
+}
+.header__btn-menu {
+	display: none;
+	font-size: 28px;
+	cursor: pointer;
+	padding-top: 5px;
 }
